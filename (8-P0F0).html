@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+          margin: 15px;
+          text-align: left; 
+      }
+
+      .image{
+          margin-left: 230px;
+          margin-right: 350px;
+      }
+      #tabb {
+          
+          width: 910px;
+          border-radius: 5px 5px 0 0 ;
+          overflow: hidden;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+
+  </style>
+</head>
+<body>
+    <div class="image">
+        <img width="100px" height="100px" src="111.png" alt=" im">
+        <h1>
+            (8-P0F0) شريك يشتكي بأنه لم يتم اخذ الطلب   </h1>
+            <br>
+        <div>
+            
+
+            <table  id="tabb" cellpadding="20px" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">الرد المستخدم
+                  </th>
+                  <th scope="col">النظام المستخدم
+                  </th>
+                  <th scope="col">حالة التذكرة
+                  </th>
+                  <th scope="col">الخطوة
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">-</th>
+                  <td>intercom</td>
+                  <td>open &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</td>
+                  <td>تحقق من رقم الطلب وفي حال عدم وجوده يتم طلبه من الشريك 
+                  </td>
+                </tr>
+
+                
+                <tr>
+                  <th scope="row">رد على شريك يطلب تعويض لطلب مرفوض او منتهي الصلاحية
+                </th>
+                  <td>Backend
+                  </td>
+                  <td>Close</td>
+                  <td>
+                     اتحقق من نوع الطلب
+                     حالة الطلب منتهي الصلاحية او مرفوض
+                     قم برفض طلب التعويض للشريك واعلامه بسبب رفضك وهو عدم قبول الطلب بالمدة المحددة او الطلب مرفوض                   </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">-
+                  </th>
+                  <td>intercom
+                  </td>
+                  <td>open</td>
+                  <td>
+                    حالة الطلب مقبول
+                    تحقق من توفر متطلبات التعويض 
+                    1-صورة المنتجات بعد التجهيز (تأكد بانها غير قابلة لإعادة البيع) 
+                    2-صورة من الفاتورة المطبوعة
+                    قم باتباع خطوة 4 أو 5 بناء على نتيجة التحقق 
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">  طلب متطلبات التعويض لطلب غير مستلم
+
+                  </th>
+                  <td>Intercom
+
+                  </td>
+                  <td>close</td>
+                  <td>لم يتم تزويدك بمتطلبات التعويض
+                    قم بطلبها من الشريك   
+                    
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">-</th>
+                  <td>Backend
+                  </td>
+                  <td>Open</td>
+                  <td>متطلبات التعويض مكتملة 
+                    تحقق من المتسبب في الغاء الطلب
+                    (بامكانك معرفة السبب من خلال المحادثة بين المرسول او العميل او الشكوى المرفوعة للعناية بالعملاء)
+                    قم باتباع خطوة 6 أو 7 بناء على نتيجة التحقق                
+                  </td>
+                </tr>
+
+                
+                <tr>
+                    <th scope="row">طلب تعويض لطلب لم يستلم والشريك المتسبب في الالغاء
+                    </th>
+                    <td>Intercom
+                    </td>
+                    <td>Close</td>
+                    <td>الطلب ملغي المتسبب هو الشريك (منتج غير متوفر - موقع خاطئ - فرع مغلق)
+                        قم برفض طلب التعويض للشريك واعلامه بسبب رفضك بناء على سبب الالغاء                    </td>
+                  </tr>
+               
+
+                <tr>
+                  <th scope="row">رد على شريك بطلب التعويض (اشعارات الدائن)
+
+                  </th>
+                  <td >Credit Note - Monday</td>
+                  <td>close</td>
+                  <td> الطلب ملغي المتسبب هو العميل أو المرسول
+                    يقبل طلب التعويض ويرفع لفريق التحصيل وابلاغ الشريك برفع طلب التعويض
+
+                </td>
+  
+
+
+
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+</body>
+</html>
